@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="ClaseService"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="ClaseCreateOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+						<xsd:element name="descripcion"
+							type="xsd:string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ClaseCreateOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ClaseUpdateOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+						<xsd:element name="descripcion"
+							type="xsd:string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ClaseUpdateOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+						<xsd:element name="descripcion"
+							type="xsd:string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ClaseDeleteOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ClaseDeleteOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ClaseHTTPOperationFault">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="ClaseHTTPOperationFault"
+							type="xsd:string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ClaseGetOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ClaseGetOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+						<xsd:element name="descripcion"
+							type="xsd:string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ClaseSearchOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="descripcion" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ClaseSearchOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+						<xsd:element name="descripcion"
+							type="xsd:string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="ClaseCreateOperationRequest">
+		<wsdl:part name="parameters" element="tns:ClaseCreateOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ClaseCreateOperationResponse">
+		<wsdl:part name="parameters" element="tns:ClaseCreateOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:message name="ClaseUpdateOperationRequest">
+		<wsdl:part name="parameters" element="tns:ClaseUpdateOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ClaseUpdateOperationResponse">
+		<wsdl:part name="parameters" element="tns:ClaseUpdateOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ClaseDeleteOperationRequest">
+		<wsdl:part name="parameters" element="tns:ClaseDeleteOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ClaseDeleteOperationResponse">
+		<wsdl:part name="parameters" element="tns:ClaseDeleteOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ClaseHTTPOperationFault">
+		<wsdl:part name="parameters" element="tns:ClaseHTTPOperationFault"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ClaseGetOperationRequest">
+		<wsdl:part name="parameters" element="tns:ClaseGetOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ClaseGetOperationResponse">
+		<wsdl:part name="parameters" element="tns:ClaseGetOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ClaseSearchOperationRequest">
+		<wsdl:part name="parameters" element="tns:ClaseSearchOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ClaseSearchOperationResponse">
+		<wsdl:part name="parameters" element="tns:ClaseSearchOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="ClaseCreatePortType">
+		<wsdl:operation name="ClaseCreateOperation">
+			<wsdl:input message="tns:ClaseCreateOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:ClaseCreateOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:portType name="ClaseUpdatePortType">
+		<wsdl:operation name="ClaseUpdateOperation">
+			<wsdl:input message="tns:ClaseUpdateOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:ClaseUpdateOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="ClaseHTTPPortType">
+		<wsdl:operation name="ClaseDeleteOperation">
+			<wsdl:input message="tns:ClaseDeleteOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:ClaseDeleteOperationResponse"></wsdl:output>
+        </wsdl:operation>
+		<wsdl:operation name="ClaseGetOperation">
+			<wsdl:input message="tns:ClaseGetOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:ClaseGetOperationResponse"></wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="ClaseSearchOperation">
+			<wsdl:input message="tns:ClaseSearchOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:ClaseSearchOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="ClaseServiceBinding"
+		type="tns:ClaseCreatePortType">
+
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="ClaseCreateOperation">
+
+			<soap:operation
+				soapAction="http://www.talend.org/service/ClaseCreateOperation" />
+			<wsdl:input>
+
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:binding name="UpdateSOAPBinding"
+		type="tns:ClaseUpdatePortType">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="ClaseUpdateOperation">
+			<soap:operation
+				soapAction="http://www.talend.org/service/ClaseUpdateOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="HTTPBinding" type="tns:ClaseHTTPPortType">
+		<http:binding verb="GET" />
+		<wsdl:operation name="ClaseDeleteOperation">
+			<http:operation location="/ClaseDeleteOperation" />
+			<wsdl:input>
+				<http:urlEncoded />
+			</wsdl:input>
+			<wsdl:output>
+				<mime:content type="text/xml" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="ClaseGetOperation">
+			<http:operation location="/ClaseGetOperation" />
+			<wsdl:input>
+				<http:urlEncoded />
+			</wsdl:input>
+			<wsdl:output>
+				<mime:content type="text/xml" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="ClaseSearchOperation">
+			<http:operation location="/ClaseSearchOperation" />
+			<wsdl:input>
+				<http:urlEncoded />
+			</wsdl:input>
+			<wsdl:output>
+				<mime:content type="text/xml" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="ClaseService">
+		<wsdl:port name="ClaseServiceCreatePort" binding="tns:ClaseServiceBinding">
+			<soap:address location="http://localhost:8090/services/ClaseService/Create" />
+		</wsdl:port>
+		<wsdl:port name="ClaseServiceUpdatePort" binding="tns:UpdateSOAPBinding">
+			<soap:address location="http://localhost:8090/services/ClaseService/Update" />
+		</wsdl:port>
+		<wsdl:port name="ClaseServiceHTTPPort" binding="tns:HTTPBinding">
+			<http:address location="http://localhost:8090/services/ClaseService/HTTP" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

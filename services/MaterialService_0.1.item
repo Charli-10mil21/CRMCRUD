@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services">
+  <Services:ServiceConnection xmi:id="_KO3k4Gz1Ee2kU7wU0ZsY6Q" id="_KO290Gz1Ee2kU7wU0ZsY6Q" servicePort="_b1j5UGz2Ee2kU7wU0ZsY6Q _b1j5Umz2Ee2kU7wU0ZsY6Q _b1j5Vmz2Ee2kU7wU0ZsY6Q"/>
+  <Services:ServicePort xmi:id="_b1j5UGz2Ee2kU7wU0ZsY6Q" name="MaterialCreatePortType" id="_d12LgGz1Ee2kU7wU0ZsY6Q" serviceOperation="_b1j5UWz2Ee2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_b1j5UWz2Ee2kU7wU0ZsY6Q" label="MaterialCreateOperation-MaterialCreatePortType_MaterialCreateOperation" name="MaterialCreateOperation" id="_d12LgWz1Ee2kU7wU0ZsY6Q" referenceJobId="_1ohroGz3Ee2kU7wU0ZsY6Q"/>
+  <Services:ServicePort xmi:id="_b1j5Umz2Ee2kU7wU0ZsY6Q" name="MaterialHTTPPortType" id="_KrkSgGz2Ee2kU7wU0ZsY6Q" serviceOperation="_b1j5U2z2Ee2kU7wU0ZsY6Q _b1j5VGz2Ee2kU7wU0ZsY6Q _b1j5VWz2Ee2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_b1j5U2z2Ee2kU7wU0ZsY6Q" label="MaterialDeleteOperation" name="MaterialDeleteOperation" id="_KrkSgWz2Ee2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_b1j5VGz2Ee2kU7wU0ZsY6Q" label="MaterialGetOperation-MaterialHTTPPortType_MaterialGetOperation" name="MaterialGetOperation" id="_KrkSgmz2Ee2kU7wU0ZsY6Q" referenceJobId="_XDa4oGz5Ee2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_b1j5VWz2Ee2kU7wU0ZsY6Q" label="MaterialSearchOperation" name="MaterialSearchOperation" id="_KrkSg2z2Ee2kU7wU0ZsY6Q"/>
+  <Services:ServicePort xmi:id="_b1j5Vmz2Ee2kU7wU0ZsY6Q" name="MaterialUpdatePortType" id="_blBi8Gz2Ee2kU7wU0ZsY6Q" serviceOperation="_b1j5V2z2Ee2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_b1j5V2z2Ee2kU7wU0ZsY6Q" label="MaterialUpdateOperation-MaterialUpdatePortType_MaterialUpdateOperation" name="MaterialUpdateOperation" id="_blBi8Wz2Ee2kU7wU0ZsY6Q" referenceJobId="_5Mwx8Gz4Ee2kU7wU0ZsY6Q"/>
+</xmi:XMI>

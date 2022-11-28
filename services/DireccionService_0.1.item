@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services">
+  <Services:ServiceConnection xmi:id="_xSYM4WtZEe29xYNNmrDJbw" id="_xSYM4GtZEe29xYNNmrDJbw" servicePort="_l58gcGzXEe2kU7wU0ZsY6Q _l58gcmzXEe2kU7wU0ZsY6Q _l58gdmzXEe2kU7wU0ZsY6Q"/>
+  <Services:ServicePort xmi:id="_l58gcGzXEe2kU7wU0ZsY6Q" name="DireccionCreatePortType" id="_9bkMQGtZEe29xYNNmrDJbw" serviceOperation="_l58gcWzXEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_l58gcWzXEe2kU7wU0ZsY6Q" label="DireccionCreateOperation-DireccionCreatePortType_DireccionCreateOperation" name="DireccionCreateOperation" id="_9bkMQWtZEe29xYNNmrDJbw" referenceJobId="_LAT6oGzOEe2kU7wU0ZsY6Q"/>
+  <Services:ServicePort xmi:id="_l58gcmzXEe2kU7wU0ZsY6Q" name="DireccionHTTPPortType" id="_cdPhAGzNEe2kU7wU0ZsY6Q" serviceOperation="_l58gc2zXEe2kU7wU0ZsY6Q _l58gdGzXEe2kU7wU0ZsY6Q _l58gdWzXEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_l58gc2zXEe2kU7wU0ZsY6Q" label="DireccionDeleteOperation" name="DireccionDeleteOperation" id="_cdPhAWzNEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_l58gdGzXEe2kU7wU0ZsY6Q" label="DireccionGetOperation-DireccionHTTPPortType_DireccionGetOperation" name="DireccionGetOperation" id="_cdPhAmzNEe2kU7wU0ZsY6Q" referenceJobId="_Asw8UGzQEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_l58gdWzXEe2kU7wU0ZsY6Q" label="DireccionSearchOperation" name="DireccionSearchOperation" id="_cdPhA2zNEe2kU7wU0ZsY6Q"/>
+  <Services:ServicePort xmi:id="_l58gdmzXEe2kU7wU0ZsY6Q" name="DireccionUpdatePortType" id="_QheGIGtaEe29xYNNmrDJbw" serviceOperation="_l58gd2zXEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_l58gd2zXEe2kU7wU0ZsY6Q" label="DireccionUpdateOperation-DireccionUpdatePortType_DireccionUpdateOperation" name="DireccionUpdateOperation" id="_QheGIWtaEe29xYNNmrDJbw" referenceJobId="_l2myMGzPEe2kU7wU0ZsY6Q"/>
+</xmi:XMI>

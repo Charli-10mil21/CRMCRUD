@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services">
+  <Services:ServiceConnection xmi:id="_2B_XsWz7Ee2kU7wU0ZsY6Q" id="_2B_XsGz7Ee2kU7wU0ZsY6Q" servicePort="_DaAsQGz9Ee2kU7wU0ZsY6Q _DaAsRGz9Ee2kU7wU0ZsY6Q _DaAsRmz9Ee2kU7wU0ZsY6Q"/>
+  <Services:ServicePort xmi:id="_DaAsQGz9Ee2kU7wU0ZsY6Q" name="PedidoVentaHTTPPortType" id="_0Rxh0Gz8Ee2kU7wU0ZsY6Q" serviceOperation="_DaAsQWz9Ee2kU7wU0ZsY6Q _DaAsQmz9Ee2kU7wU0ZsY6Q _DaAsQ2z9Ee2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_DaAsQWz9Ee2kU7wU0ZsY6Q" label="PedidoVentaDeleteOperation" name="PedidoVentaDeleteOperation" id="_0Rxh0Wz8Ee2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_DaAsQmz9Ee2kU7wU0ZsY6Q" label="PedidoVentaGetOperation-PedidoVentaHTTPPortType_PedidoVentaGetOperation" name="PedidoVentaGetOperation" id="_0Rxh0mz8Ee2kU7wU0ZsY6Q" referenceJobId="_1CAvIG0AEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_DaAsQ2z9Ee2kU7wU0ZsY6Q" label="PedidoVentaSearchOperation" name="PedidoVentaSearchOperation" id="_0Rxh02z8Ee2kU7wU0ZsY6Q"/>
+  <Services:ServicePort xmi:id="_DaAsRGz9Ee2kU7wU0ZsY6Q" name="PedidoVentaUpdatePortType" id="_DG2fsGz9Ee2kU7wU0ZsY6Q" serviceOperation="_DaAsRWz9Ee2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_DaAsRWz9Ee2kU7wU0ZsY6Q" label="PedidoVentaUpdateOperation-PedidoVentaUpdatePortType_PedidoVentaUpdateOperation" name="PedidoVentaUpdateOperation" id="_DG2fsWz9Ee2kU7wU0ZsY6Q" referenceJobId="_GQ22MG0AEe2kU7wU0ZsY6Q"/>
+  <Services:ServicePort xmi:id="_DaAsRmz9Ee2kU7wU0ZsY6Q" name="PedidoVentaCreatePortType" id="_hXozEGz8Ee2kU7wU0ZsY6Q" serviceOperation="_DaAsR2z9Ee2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_DaAsR2z9Ee2kU7wU0ZsY6Q" label="PedidoVentaCreateOperation-PedidoVentaCreatePortType_PedidoVentaCreateOperation" name="PedidoVentaCreateOperation" id="_hXozEWz8Ee2kU7wU0ZsY6Q" referenceJobId="_wYJS8Gz-Ee2kU7wU0ZsY6Q"/>
+</xmi:XMI>

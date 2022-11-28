@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services">
+  <Services:ServiceConnection xmi:id="_WCF14Ws1Ee2dtZ62vW0jKA" id="_WCF14Gs1Ee2dtZ62vW0jKA" servicePort="_PCC88GtpEe29xYNNmrDJbw _PCC88mtpEe29xYNNmrDJbw _PCC89GtpEe29xYNNmrDJbw _PCC892tpEe29xYNNmrDJbw"/>
+  <Services:ServicePort xmi:id="_PCC88GtpEe29xYNNmrDJbw" name="VendedorCreatePortType" id="_vX8D0Gs1Ee2dtZ62vW0jKA" serviceOperation="_PCC88WtpEe29xYNNmrDJbw"/>
+  <Services:ServiceOperation xmi:id="_PCC88WtpEe29xYNNmrDJbw" label="VendedorCreateOperation-VendedorCreatePortType_VendedorCreateOperation" name="VendedorCreateOperation" id="_vX8D0Ws1Ee2dtZ62vW0jKA" referenceJobId="_p7e60Gs4Ee2dtZ62vW0jKA"/>
+  <Services:ServicePort xmi:id="_PCC88mtpEe29xYNNmrDJbw" name="VendedorDeletePortType" id="_fXlwMGs2Ee2dtZ62vW0jKA" serviceOperation="_PCC882tpEe29xYNNmrDJbw"/>
+  <Services:ServiceOperation xmi:id="_PCC882tpEe29xYNNmrDJbw" label="VendedorDeleteOperation-VendedorDeletePortType_VendedorDeleteOperation" name="VendedorDeleteOperation" id="_fXmXQGs2Ee2dtZ62vW0jKA" referenceJobId="_2oXyQGs6Ee2dtZ62vW0jKA"/>
+  <Services:ServicePort xmi:id="_PCC89GtpEe29xYNNmrDJbw" name="VendedorGetPortType" id="_-Rk8IGs2Ee2dtZ62vW0jKA" serviceOperation="_PCC89WtpEe29xYNNmrDJbw _PCC89mtpEe29xYNNmrDJbw"/>
+  <Services:ServiceOperation xmi:id="_PCC89WtpEe29xYNNmrDJbw" label="VendedorGetOperation-VendedorGetPortType_VendedorGetOperation" name="VendedorGetOperation" id="_-Rk8IWs2Ee2dtZ62vW0jKA" referenceJobId="_eFD_EGs7Ee2dtZ62vW0jKA"/>
+  <Services:ServiceOperation xmi:id="_PCC89mtpEe29xYNNmrDJbw" label="VendedorSearchOperation-VendedorGetPortType_VendedorSearchOperation" name="VendedorSearchOperation" id="_Gig3kGs3Ee2dtZ62vW0jKA" referenceJobId="_EkstwGs8Ee2dtZ62vW0jKA"/>
+  <Services:ServicePort xmi:id="_PCC892tpEe29xYNNmrDJbw" name="VendedorUpdatePortType" id="_6ieXsGs3Ee2dtZ62vW0jKA" serviceOperation="_PCC8-GtpEe29xYNNmrDJbw"/>
+  <Services:ServiceOperation xmi:id="_PCC8-GtpEe29xYNNmrDJbw" label="VendedorUpdateOperation-VendedorUpdatePortType_VendedorUpdateOperation" name="VendedorUpdateOperation" id="_6ieXsWs3Ee2dtZ62vW0jKA" referenceJobId="_NP_iwGtkEe29xYNNmrDJbw"/>
+</xmi:XMI>

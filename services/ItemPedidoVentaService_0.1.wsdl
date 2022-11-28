@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="ItemPedidoVentaService"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="ItemPedidoVentaCreateOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="id_pedido" type="xsd:int"></xsd:element>
+						<xsd:element name="cantidad"
+							type="xsd:double">
+						</xsd:element>
+						<xsd:element name="valor_unitario"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="id_material"
+							type="xsd:int">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ItemPedidoVentaCreateOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="out" type="xsd:int"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ItemPedidoVentaDeleteOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ItemPedidoVentaDeleteOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="out" type="xsd:int"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ItemPedidoVentaGetOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ItemPedidoVentaGetOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+						<xsd:element name="id_pedido"
+							type="xsd:int">
+						</xsd:element>
+						<xsd:element name="cantidad"
+							type="xsd:double">
+						</xsd:element>
+						<xsd:element name="valor_unitario"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="id_material"
+							type="xsd:int">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ItemPedidoVentaSearchOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id_pedido" type="xsd:int"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ItemPedidoVentaSearchOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+						<xsd:element name="id_pedido"
+							type="xsd:int">
+						</xsd:element>
+						<xsd:element name="cantidad"
+							type="xsd:double">
+						</xsd:element>
+						<xsd:element name="valor_unitario"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="id_material"
+							type="xsd:int">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ItemPedidoVentaUpdateOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+						<xsd:element name="id_pedido"
+							type="xsd:int">
+						</xsd:element>
+						<xsd:element name="cantidad"
+							type="xsd:double">
+						</xsd:element>
+						<xsd:element name="valor_unitario"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="id_material"
+							type="xsd:int">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ItemPedidoVentaUpdateOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+						<xsd:element name="id_pedido"
+							type="xsd:int">
+						</xsd:element>
+						<xsd:element name="cantidad"
+							type="xsd:double">
+						</xsd:element>
+						<xsd:element name="valor_unitario"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="id_material"
+							type="xsd:int">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="ItemPedidoVentaCreateOperationRequest">
+		<wsdl:part name="parameters" element="tns:ItemPedidoVentaCreateOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ItemPedidoVentaCreateOperationResponse">
+		<wsdl:part name="parameters" element="tns:ItemPedidoVentaCreateOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:message name="ItemPedidoVentaDeleteOperationRequest">
+		<wsdl:part name="parameters" element="tns:ItemPedidoVentaDeleteOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ItemPedidoVentaDeleteOperationResponse">
+		<wsdl:part name="parameters" element="tns:ItemPedidoVentaDeleteOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ItemPedidoVentaGetOperationRequest">
+		<wsdl:part name="parameters" element="tns:ItemPedidoVentaGetOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ItemPedidoVentaGetOperationResponse">
+		<wsdl:part name="parameters" element="tns:ItemPedidoVentaGetOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ItemPedidoVentaSearchOperationRequest">
+		<wsdl:part name="parameters" element="tns:ItemPedidoVentaSearchOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ItemPedidoVentaSearchOperationResponse">
+		<wsdl:part name="parameters" element="tns:ItemPedidoVentaSearchOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ItemPedidoVentaUpdateOperationRequest">
+		<wsdl:part name="parameters" element="tns:ItemPedidoVentaUpdateOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ItemPedidoVentaUpdateOperationResponse">
+		<wsdl:part name="parameters" element="tns:ItemPedidoVentaUpdateOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="ItemPedidoVentaCreatePortType">
+		<wsdl:operation name="ItemPedidoVentaCreateOperation">
+			<wsdl:input message="tns:ItemPedidoVentaCreateOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:ItemPedidoVentaCreateOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:portType name="ItemPedidoVentaHTTPPortType">
+		<wsdl:operation name="ItemPedidoVentaDeleteOperation">
+			<wsdl:input message="tns:ItemPedidoVentaDeleteOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:ItemPedidoVentaDeleteOperationResponse"></wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="ItemPedidoVentaGetOperation">
+			<wsdl:input message="tns:ItemPedidoVentaGetOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:ItemPedidoVentaGetOperationResponse"></wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="ItemPedidoVentaSearchOperation">
+			<wsdl:input message="tns:ItemPedidoVentaSearchOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:ItemPedidoVentaSearchOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="ItemPedidoVentaUpdatePortType">
+		<wsdl:operation name="ItemPedidoVentaUpdateOperation">
+			<wsdl:input message="tns:ItemPedidoVentaUpdateOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:ItemPedidoVentaUpdateOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="CreateSOAPBinding"
+		type="tns:ItemPedidoVentaCreatePortType">
+
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="ItemPedidoVentaCreateOperation">
+
+			<soap:operation
+				soapAction="http://www.talend.org/service/ItemPedidoVentaCreateOperation" />
+			<wsdl:input>
+
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:binding name="HTTPBinding"
+		type="tns:ItemPedidoVentaHTTPPortType">
+		<http:binding verb="GET" />
+		<wsdl:operation name="ItemPedidoVentaDeleteOperation">
+			<http:operation location="/ItemPedidoVentaDeleteOperation" />
+			<wsdl:input>
+				<http:urlEncoded />
+			</wsdl:input>
+			<wsdl:output>
+				<mime:content type="text/xml" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="ItemPedidoVentaGetOperation">
+			<http:operation location="/ItemPedidoVentaGetOperation" />
+			<wsdl:input>
+				<http:urlEncoded />
+			</wsdl:input>
+			<wsdl:output>
+				<mime:content type="text/xml" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="ItemPedidoVentaSearchOperation">
+			<http:operation location="/ItemPedidoVentaSearchOperation" />
+			<wsdl:input>
+				<http:urlEncoded />
+			</wsdl:input>
+			<wsdl:output>
+				<mime:content type="text/xml" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="UpdateSOAPBinding"
+		type="tns:ItemPedidoVentaUpdatePortType">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="ItemPedidoVentaUpdateOperation">
+			<soap:operation
+				soapAction="http://www.talend.org/service/ItemPedidoVentaUpdateOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="ItemPedidoVentaService">
+		<wsdl:port name="ItemPedidoVentaCreatePort" binding="tns:CreateSOAPBinding">
+			<soap:address location="http://localhost:8090/services/ItemPedidoVentaService/Create" />
+		</wsdl:port>
+		<wsdl:port name="ItemPedidoVentaHTTPPort" binding="tns:HTTPBinding">
+			<http:address location="http://localhost:8090/services/ItemPedidoVentaService/HTTP" />
+		</wsdl:port>
+		<wsdl:port name="ItemPedidoVentaUpdatePort" binding="tns:UpdateSOAPBinding">
+			<soap:address location="http://localhost:8090/services/ItemPedidoVentaService/Update" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

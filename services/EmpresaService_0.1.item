@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services">
+  <Services:ServiceConnection xmi:id="_qmssAGzuEe2kU7wU0ZsY6Q" id="_qmsE8GzuEe2kU7wU0ZsY6Q" servicePort="_dn_H8GzwEe2kU7wU0ZsY6Q _dn_H9GzwEe2kU7wU0ZsY6Q _dn_H9mzwEe2kU7wU0ZsY6Q"/>
+  <Services:ServicePort xmi:id="_dn_H8GzwEe2kU7wU0ZsY6Q" name="EmpresaHTTPPortType" id="_GK8EIGzvEe2kU7wU0ZsY6Q" serviceOperation="_dn_H8WzwEe2kU7wU0ZsY6Q _dn_H8mzwEe2kU7wU0ZsY6Q _dn_H82zwEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_dn_H8WzwEe2kU7wU0ZsY6Q" label="EmpresaDeleteOperation" name="EmpresaDeleteOperation" id="_GK8EIWzvEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_dn_H8mzwEe2kU7wU0ZsY6Q" label="EmpresaGetOperation-EmpresaHTTPPortType_EmpresaGetOperation" name="EmpresaGetOperation" id="_GK8EImzvEe2kU7wU0ZsY6Q" referenceJobId="_t_NYkGzxEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_dn_H82zwEe2kU7wU0ZsY6Q" label="EmpresaSearchOperation" name="EmpresaSearchOperation" id="_GK8EI2zvEe2kU7wU0ZsY6Q"/>
+  <Services:ServicePort xmi:id="_dn_H9GzwEe2kU7wU0ZsY6Q" name="EmpresaUpdatePortType" id="_XLUb8GzvEe2kU7wU0ZsY6Q" serviceOperation="_dn_H9WzwEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_dn_H9WzwEe2kU7wU0ZsY6Q" label="EmpresaUpdateOperation-EmpresaUpdatePortType_EmpresaUpdateOperation" name="EmpresaUpdateOperation" id="_XLUb8WzvEe2kU7wU0ZsY6Q" referenceJobId="_PVePIGzxEe2kU7wU0ZsY6Q"/>
+  <Services:ServicePort xmi:id="_dn_H9mzwEe2kU7wU0ZsY6Q" name="EmpresaCreatePortType" id="_GK8EJGzvEe2kU7wU0ZsY6Q" serviceOperation="_dn_H92zwEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_dn_H92zwEe2kU7wU0ZsY6Q" label="EmpresaCreateOperation-EmpresaCreatePortType_EmpresaCreateOperation" name="EmpresaCreateOperation" id="_GK8EJWzvEe2kU7wU0ZsY6Q" referenceJobId="_iIPnEGzwEe2kU7wU0ZsY6Q"/>
+</xmi:XMI>

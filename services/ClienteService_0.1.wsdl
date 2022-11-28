@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="ClienteService"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="ClienteCreateOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="id" type="xsd:string"></xsd:element>
+						<xsd:element name="razon_social"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="nombre"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="id_vendedor"
+							type="xsd:int">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ClienteCreateOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ClienteUpdateOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:string"></xsd:element>
+						<xsd:element name="razon_social"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="nombre"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="id_vendedor"
+							type="xsd:int">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ClienteUpdateOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:string"></xsd:element>
+						<xsd:element name="razon_social"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="nombre"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="id_vendedor"
+							type="xsd:int">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ClienteGetOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ClienteGetOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:string"></xsd:element>
+						<xsd:element name="razon_social"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="nombre"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="id_vendedor"
+							type="xsd:int">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ClienteSearchOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="nombre" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ClienteSearchOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:string"></xsd:element>
+						<xsd:element name="razon_social"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="nombre"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="id_vendedor"
+							type="xsd:int">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ClienteDeleteOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ClienteDeleteOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="ClienteCreateOperationRequest">
+		<wsdl:part name="parameters" element="tns:ClienteCreateOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ClienteCreateOperationResponse">
+		<wsdl:part name="parameters" element="tns:ClienteCreateOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:message name="ClienteUpdateOperationRequest">
+		<wsdl:part name="parameters" element="tns:ClienteUpdateOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ClienteUpdateOperationResponse">
+		<wsdl:part name="parameters" element="tns:ClienteUpdateOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ClienteGetOperationRequest">
+		<wsdl:part name="parameters" element="tns:ClienteGetOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ClienteGetOperationResponse">
+		<wsdl:part name="parameters" element="tns:ClienteGetOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ClienteSearchOperationRequest">
+		<wsdl:part name="parameters" element="tns:ClienteSearchOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ClienteSearchOperationResponse">
+		<wsdl:part name="parameters" element="tns:ClienteSearchOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ClienteDeleteOperationRequest">
+		<wsdl:part name="parameters" element="tns:ClienteDeleteOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ClienteDeleteOperationResponse">
+		<wsdl:part name="parameters" element="tns:ClienteDeleteOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="ClienteCreatePortType">
+		<wsdl:operation name="ClienteCreateOperation">
+			<wsdl:input message="tns:ClienteCreateOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:ClienteCreateOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:portType name="ClienteUpdatePortType">
+		<wsdl:operation name="ClienteUpdateOperation">
+			<wsdl:input message="tns:ClienteUpdateOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:ClienteUpdateOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="ClienteGetPortType">
+		<wsdl:operation name="ClienteGetOperation">
+			<wsdl:input message="tns:ClienteGetOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:ClienteGetOperationResponse"></wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="ClienteSearchOperation">
+			<wsdl:input message="tns:ClienteSearchOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:ClienteSearchOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="ClienteDeletePortType">
+		<wsdl:operation name="ClienteDeleteOperation">
+			<wsdl:input message="tns:ClienteDeleteOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:ClienteDeleteOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="ClienteServiceBinding"
+		type="tns:ClienteCreatePortType">
+
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="ClienteCreateOperation">
+
+			<soap:operation
+				soapAction="http://www.talend.org/service/ClienteCreateOperation" />
+			<wsdl:input>
+
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:binding name="UpdateSOAPBinding"
+		type="tns:ClienteUpdatePortType">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="ClienteUpdateOperation">
+			<soap:operation
+				soapAction="http://www.talend.org/service/ClienteUpdateOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="GetHTTPBinding" type="tns:ClienteGetPortType">
+		<http:binding verb="GET" />
+		<wsdl:operation name="ClienteGetOperation">
+			<http:operation location="/ClienteGetOperation" />
+			<wsdl:input>
+				<http:urlEncoded />
+			</wsdl:input>
+			<wsdl:output>
+				<mime:content type="text/xml" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="ClienteSearchOperation">
+			<http:operation location="/ClienteSearchOperation" />
+			<wsdl:input>
+				<http:urlEncoded />
+			</wsdl:input>
+			<wsdl:output>
+				<mime:content type="text/xml" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="DeleteHTTPBinding"
+		type="tns:ClienteDeletePortType">
+		<http:binding verb="POST" />
+		<wsdl:operation name="ClienteDeleteOperation">
+			<http:operation location="/ClienteDeleteOperation" />
+			<wsdl:input>
+				<mime:content type="application/x-www-form-urlencoded" />
+			</wsdl:input>
+			<wsdl:output>
+				<mime:content type="text/xml" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="ClienteService">
+		<wsdl:port name="ClienteServiceCreatePort" binding="tns:ClienteServiceBinding">
+			<soap:address location="http://localhost:8090/services/ClienteService/Create" />
+		</wsdl:port>
+		<wsdl:port name="ClienteUpdatePort" binding="tns:UpdateSOAPBinding">
+			<soap:address location="http://localhost:8090/services/ClienteService/Update" />
+		</wsdl:port>
+		<wsdl:port name="ClienteGetPort" binding="tns:GetHTTPBinding">
+			<http:address location="http://localhost:8090/services/ClienteService/Get" />
+		</wsdl:port>
+		<wsdl:port name="ClienteDeletePort" binding="tns:DeleteHTTPBinding">
+			<http:address location="http://localhost:8090/services/ClienteService/Delete" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

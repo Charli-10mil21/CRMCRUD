@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services">
+  <Services:ServiceConnection xmi:id="_2CrdwW0HEe2kU7wU0ZsY6Q" id="_2CrdwG0HEe2kU7wU0ZsY6Q" servicePort="_nQqlgG0IEe2kU7wU0ZsY6Q _nQqlgm0IEe2kU7wU0ZsY6Q _nQqlhm0IEe2kU7wU0ZsY6Q"/>
+  <Services:ServicePort xmi:id="_nQqlgG0IEe2kU7wU0ZsY6Q" name="ItemPedidoVentaCreatePortType" id="_FqKwAG0IEe2kU7wU0ZsY6Q" serviceOperation="_nQqlgW0IEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_nQqlgW0IEe2kU7wU0ZsY6Q" label="ItemPedidoVentaCreateOperation-ItemPedidoVentaCreatePortType_ItemPedidoVentaCreateOperation" name="ItemPedidoVentaCreateOperation" id="_FqKwAW0IEe2kU7wU0ZsY6Q" referenceJobId="__FpLsG0KEe2kU7wU0ZsY6Q"/>
+  <Services:ServicePort xmi:id="_nQqlgm0IEe2kU7wU0ZsY6Q" name="ItemPedidoVentaHTTPPortType" id="_YeSWUG0IEe2kU7wU0ZsY6Q" serviceOperation="_nQqlg20IEe2kU7wU0ZsY6Q _nQqlhG0IEe2kU7wU0ZsY6Q _nQqlhW0IEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_nQqlg20IEe2kU7wU0ZsY6Q" label="ItemPedidoVentaDeleteOperation" name="ItemPedidoVentaDeleteOperation" id="_YeSWUW0IEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_nQqlhG0IEe2kU7wU0ZsY6Q" label="ItemPedidoVentaGetOperation-ItemPedidoVentaHTTPPortType_ItemPedidoVentaGetOperation" name="ItemPedidoVentaGetOperation" id="_YeSWUm0IEe2kU7wU0ZsY6Q" referenceJobId="_RErusG0MEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_nQqlhW0IEe2kU7wU0ZsY6Q" label="ItemPedidoVentaSearchOperation" name="ItemPedidoVentaSearchOperation" id="_YeSWU20IEe2kU7wU0ZsY6Q"/>
+  <Services:ServicePort xmi:id="_nQqlhm0IEe2kU7wU0ZsY6Q" name="ItemPedidoVentaUpdatePortType" id="_nAajAG0IEe2kU7wU0ZsY6Q" serviceOperation="_nQqlh20IEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_nQqlh20IEe2kU7wU0ZsY6Q" label="ItemPedidoVentaUpdateOperation-ItemPedidoVentaUpdatePortType_ItemPedidoVentaUpdateOperation" name="ItemPedidoVentaUpdateOperation" id="_nAajAW0IEe2kU7wU0ZsY6Q" referenceJobId="_2upPEG0LEe2kU7wU0ZsY6Q"/>
+</xmi:XMI>

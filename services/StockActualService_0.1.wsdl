@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="StockActualService"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="StockActualCreateOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="id_material"
+							type="xsd:int">
+						</xsd:element>
+						<xsd:element name="stock"
+							type="xsd:int">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="StockActualCreateOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="stock" type="xsd:int"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="StockActualDeleteOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="StockActualDeleteOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="out" type="xsd:int"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="StockActualGetOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="StockActualGetOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+						<xsd:element name="id_material"
+							type="xsd:int">
+						</xsd:element>
+						<xsd:element name="stock"
+							type="xsd:int">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="StockActualSearchOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id_material" type="xsd:int"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="StockActualSearchOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+						<xsd:element name="id_material"
+							type="xsd:int">
+						</xsd:element>
+						<xsd:element name="stock"
+							type="xsd:int">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="StockActualUpdateOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+						<xsd:element name="id_material"
+							type="xsd:int">
+						</xsd:element>
+						<xsd:element name="stock"
+							type="xsd:int">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="StockActualUpdateOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+						<xsd:element name="id_material"
+							type="xsd:int">
+						</xsd:element>
+						<xsd:element name="stock"
+							type="xsd:int">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="StockActualCreateOperationRequest">
+		<wsdl:part name="parameters" element="tns:StockActualCreateOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="StockActualCreateOperationResponse">
+		<wsdl:part name="parameters" element="tns:StockActualCreateOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:message name="StockActualDeleteOperationRequest">
+		<wsdl:part name="parameters" element="tns:StockActualDeleteOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="StockActualDeleteOperationResponse">
+		<wsdl:part name="parameters" element="tns:StockActualDeleteOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="StockActualGetOperationRequest">
+		<wsdl:part name="parameters" element="tns:StockActualGetOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="StockActualGetOperationResponse">
+		<wsdl:part name="parameters" element="tns:StockActualGetOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="StockActualSearchOperationRequest">
+		<wsdl:part name="parameters" element="tns:StockActualSearchOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="StockActualSearchOperationResponse">
+		<wsdl:part name="parameters" element="tns:StockActualSearchOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="StockActualUpdateOperationRequest">
+		<wsdl:part name="parameters" element="tns:StockActualUpdateOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="StockActualUpdateOperationResponse">
+		<wsdl:part name="parameters" element="tns:StockActualUpdateOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="StockActualCreatePortType">
+		<wsdl:operation name="StockActualCreateOperation">
+			<wsdl:input message="tns:StockActualCreateOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:StockActualCreateOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:portType name="StockActualHTTPPortType">
+		<wsdl:operation name="StockActualDeleteOperation">
+			<wsdl:input message="tns:StockActualDeleteOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:StockActualDeleteOperationResponse"></wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="StockActualGetOperation">
+			<wsdl:input message="tns:StockActualGetOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:StockActualGetOperationResponse"></wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="StockActualSearchOperation">
+			<wsdl:input message="tns:StockActualSearchOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:StockActualSearchOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="StockActualUpdatePortType">
+		<wsdl:operation name="StockActualUpdateOperation">
+			<wsdl:input message="tns:StockActualUpdateOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:StockActualUpdateOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="CreateSOAPBinding"
+		type="tns:StockActualCreatePortType">
+
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="StockActualCreateOperation">
+
+			<soap:operation
+				soapAction="http://www.talend.org/service/StockActualCreateOperation" />
+			<wsdl:input>
+
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:binding name="HTTPBinding"
+		type="tns:StockActualHTTPPortType">
+		<http:binding verb="GET" />
+		<wsdl:operation name="StockActualDeleteOperation">
+			<http:operation location="/StockActualDeleteOperation" />
+			<wsdl:input>
+				<http:urlEncoded />
+			</wsdl:input>
+			<wsdl:output>
+				<mime:content type="text/xml" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="StockActualGetOperation">
+			<http:operation location="/StockActualGetOperation" />
+			<wsdl:input>
+				<http:urlEncoded />
+			</wsdl:input>
+			<wsdl:output>
+				<mime:content type="text/xml" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="StockActualSearchOperation">
+			<http:operation location="/StockActualSearchOperation" />
+			<wsdl:input>
+				<http:urlEncoded />
+			</wsdl:input>
+			<wsdl:output>
+				<mime:content type="text/xml" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="UpdateSOAPBinding"
+		type="tns:StockActualUpdatePortType">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="StockActualUpdateOperation">
+			<soap:operation
+				soapAction="http://www.talend.org/service/StockActualUpdateOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="StockActualService">
+		<wsdl:port name="StockActualCreatePort" binding="tns:CreateSOAPBinding">
+			<soap:address location="http://localhost:8090/services/StockActualService/Create" />
+		</wsdl:port>
+		<wsdl:port name="StockActualHTTPPort" binding="tns:HTTPBinding">
+			<http:address location="http://localhost:8090/services/StockActualService/HTTP" />
+		</wsdl:port>
+		<wsdl:port name="StockActualwPort" binding="tns:UpdateSOAPBinding">
+			<soap:address location="http://localhost:8090/services/StockActualService/Update" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

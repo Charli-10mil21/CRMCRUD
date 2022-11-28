@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services">
+  <Services:ServiceConnection xmi:id="_Di1pYG0DEe2kU7wU0ZsY6Q" id="_Di1CUG0DEe2kU7wU0ZsY6Q" servicePort="_FGkQgG0EEe2kU7wU0ZsY6Q _FGkQhG0EEe2kU7wU0ZsY6Q _FGkQhm0EEe2kU7wU0ZsY6Q"/>
+  <Services:ServicePort xmi:id="_FGkQgG0EEe2kU7wU0ZsY6Q" name="StockActualHTTPPortType" id="_fGi2AG0DEe2kU7wU0ZsY6Q" serviceOperation="_FGkQgW0EEe2kU7wU0ZsY6Q _FGkQgm0EEe2kU7wU0ZsY6Q _FGkQg20EEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_FGkQgW0EEe2kU7wU0ZsY6Q" label="StockActualDeleteOperation" name="StockActualDeleteOperation" id="_fGi2AW0DEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_FGkQgm0EEe2kU7wU0ZsY6Q" label="StockActualGetOperation-StockActualHTTPPortType_StockActualGetOperation" name="StockActualGetOperation" id="_fGi2Am0DEe2kU7wU0ZsY6Q" referenceJobId="_PfKxIG0GEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_FGkQg20EEe2kU7wU0ZsY6Q" label="StockActualSearchOperation" name="StockActualSearchOperation" id="_fGi2A20DEe2kU7wU0ZsY6Q"/>
+  <Services:ServicePort xmi:id="_FGkQhG0EEe2kU7wU0ZsY6Q" name="StockActualCreatePortType" id="_LQZK8G0DEe2kU7wU0ZsY6Q" serviceOperation="_FGkQhW0EEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_FGkQhW0EEe2kU7wU0ZsY6Q" label="StockActualCreateOperation-StockActualCreatePortType_StockActualCreateOperation" name="StockActualCreateOperation" id="_LQZyAG0DEe2kU7wU0ZsY6Q" referenceJobId="_W64xQG0FEe2kU7wU0ZsY6Q"/>
+  <Services:ServicePort xmi:id="_FGkQhm0EEe2kU7wU0ZsY6Q" name="StockActualUpdatePortType" id="_E3f5wG0EEe2kU7wU0ZsY6Q" serviceOperation="_FGkQh20EEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_FGkQh20EEe2kU7wU0ZsY6Q" label="StockActualUpdateOperation-StockActualUpdatePortType_StockActualUpdateOperation" name="StockActualUpdateOperation" id="_E3f5wW0EEe2kU7wU0ZsY6Q" referenceJobId="_67sGAG0FEe2kU7wU0ZsY6Q"/>
+</xmi:XMI>

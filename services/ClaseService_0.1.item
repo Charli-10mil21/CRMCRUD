@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services">
+  <Services:ServiceConnection xmi:id="_kaOMYWzSEe2kU7wU0ZsY6Q" id="_kaOMYGzSEe2kU7wU0ZsY6Q" servicePort="_RsRNkGzUEe2kU7wU0ZsY6Q _RsRNkmzUEe2kU7wU0ZsY6Q _RsRNlmzUEe2kU7wU0ZsY6Q"/>
+  <Services:ServicePort xmi:id="_RsRNkGzUEe2kU7wU0ZsY6Q" name="ClaseCreatePortType" id="_swlaYGzSEe2kU7wU0ZsY6Q" serviceOperation="_RsRNkWzUEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_RsRNkWzUEe2kU7wU0ZsY6Q" label="ClaseCreateOperation-ClaseCreatePortType_ClaseCreateOperation" name="ClaseCreateOperation" id="_swlaYWzSEe2kU7wU0ZsY6Q" referenceJobId="_XTNA4GzUEe2kU7wU0ZsY6Q"/>
+  <Services:ServicePort xmi:id="_RsRNkmzUEe2kU7wU0ZsY6Q" name="ClaseHTTPPortType" id="_NXKOgGzUEe2kU7wU0ZsY6Q" serviceOperation="_RsRNk2zUEe2kU7wU0ZsY6Q _RsRNlGzUEe2kU7wU0ZsY6Q _RsRNlWzUEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_RsRNk2zUEe2kU7wU0ZsY6Q" label="ClaseDeleteOperation" name="ClaseDeleteOperation" id="_NXKOgWzUEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_RsRNlGzUEe2kU7wU0ZsY6Q" label="ClaseGetOperation-ClaseHTTPPortType_ClaseGetOperation" name="ClaseGetOperation" id="_NXKOgmzUEe2kU7wU0ZsY6Q" referenceJobId="_fJADAGzVEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_RsRNlWzUEe2kU7wU0ZsY6Q" label="ClaseSearchOperation" name="ClaseSearchOperation" id="_NXKOg2zUEe2kU7wU0ZsY6Q"/>
+  <Services:ServicePort xmi:id="_RsRNlmzUEe2kU7wU0ZsY6Q" name="ClaseUpdatePortType" id="_9RN7IGzSEe2kU7wU0ZsY6Q" serviceOperation="_RsRNl2zUEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_RsRNl2zUEe2kU7wU0ZsY6Q" label="ClaseUpdateOperation-ClaseUpdatePortType_ClaseUpdateOperation" name="ClaseUpdateOperation" id="_9RN7IWzSEe2kU7wU0ZsY6Q" referenceJobId="_IBzM0G8YEe2yL9D-MEyglw"/>
+</xmi:XMI>

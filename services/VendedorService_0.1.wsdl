@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="VendedorService"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="VendedorCreateOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+						<xsd:element name="nombre" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="razon_social"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="barrio" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="municipio"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="uf" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="celular"
+							type="xsd:string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="VendedorCreateOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="VendedorDeleteOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="VendedorDeleteOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="VendedorGetOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="VendedorGetOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+						<xsd:element name="nombre" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="razon_social"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="barrio" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="municipio"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="uf" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="celular"
+							type="xsd:string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="VendedorSearchOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="nombre" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="VendedorSearchOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+						<xsd:element name="nombre" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="razon_social"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="barrio" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="municipio"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="uf" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="celular"
+							type="xsd:string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="VendedorUpdateOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+						<xsd:element name="nombre"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="razon_social"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="barrio"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="municipio"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="uf"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="celular"
+							type="xsd:string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="VendedorUpdateOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+						<xsd:element name="nombre"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="razon_social"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="barrio"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="municipio"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="uf"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="celular"
+							type="xsd:string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="VendedorCreateOperationRequest">
+		<wsdl:part name="parameters" element="tns:VendedorCreateOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="VendedorCreateOperationResponse">
+		<wsdl:part name="parameters" element="tns:VendedorCreateOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:message name="VendedorDeleteOperationRequest">
+		<wsdl:part name="parameters" element="tns:VendedorDeleteOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="VendedorDeleteOperationResponse">
+		<wsdl:part name="parameters" element="tns:VendedorDeleteOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="VendedorGetOperationRequest">
+		<wsdl:part name="parameters" element="tns:VendedorGetOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="VendedorGetOperationResponse">
+		<wsdl:part name="parameters" element="tns:VendedorGetOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="VendedorSearchOperationRequest">
+		<wsdl:part name="parameters" element="tns:VendedorSearchOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="VendedorSearchOperationResponse">
+		<wsdl:part name="parameters" element="tns:VendedorSearchOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="VendedorUpdateOperationRequest">
+		<wsdl:part name="parameters" element="tns:VendedorUpdateOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="VendedorUpdateOperationResponse">
+		<wsdl:part name="parameters" element="tns:VendedorUpdateOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="VendedorCreatePortType">
+		<wsdl:operation name="VendedorCreateOperation">
+			<wsdl:input message="tns:VendedorCreateOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:VendedorCreateOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:portType name="VendedorDeletePortType">
+		<wsdl:operation name="VendedorDeleteOperation">
+			<wsdl:input message="tns:VendedorDeleteOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:VendedorDeleteOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="VendedorGetPortType">
+		<wsdl:operation name="VendedorGetOperation">
+			<wsdl:input message="tns:VendedorGetOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:VendedorGetOperationResponse"></wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="VendedorSearchOperation">
+			<wsdl:input message="tns:VendedorSearchOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:VendedorSearchOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="VendedorUpdatePortType">
+		<wsdl:operation name="VendedorUpdateOperation">
+			<wsdl:input message="tns:VendedorUpdateOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:VendedorUpdateOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="CreateSOAPBinding"
+		type="tns:VendedorCreatePortType">
+
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="VendedorCreateOperation">
+
+			<soap:operation
+				soapAction="http://www.talend.org/service/VendedorCreateOperation" />
+			<wsdl:input>
+
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:binding name="DeleteHTTPBinding"
+		type="tns:VendedorDeletePortType">
+
+		<http:binding verb="POST" />
+		<wsdl:operation name="VendedorDeleteOperation">
+
+			<http:operation location="/VendedorDeleteOperation" />
+			<wsdl:input>
+				<mime:content type="application/x-www-form-urlencoded" />
+
+			</wsdl:input>
+			<wsdl:output>
+				<mime:content type="text/xml" />
+
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="GetHTTPBinding"
+		type="tns:VendedorGetPortType">
+
+		<http:binding verb="GET" />
+		<wsdl:operation name="VendedorGetOperation">
+
+			<http:operation location="/VendedorGetOperation" />
+			<wsdl:input>
+
+				<http:urlEncoded />
+			</wsdl:input>
+			<wsdl:output>
+				<mime:content type="text/xml" />
+
+
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="VendedorSearchOperation">
+
+			<http:operation location="/VendedorSearchOperation" />
+			<wsdl:input>
+
+				<http:urlEncoded />
+			</wsdl:input>
+			<wsdl:output>
+				<mime:content type="text/xml" />
+
+
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="UpdateSOAPBinding"
+		type="tns:VendedorUpdatePortType">
+
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="VendedorUpdateOperation">
+
+			<soap:operation
+				soapAction="http://www.talend.org/service/VendedorUpdateOperation" />
+			<wsdl:input>
+
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="VendedorService">
+		<wsdl:port name="VendedorServiceCreatePort" binding="tns:CreateSOAPBinding">
+			<soap:address location="http://localhost:8088/services/VendedorService/Create" />
+		</wsdl:port>
+		<wsdl:port name="VendedorDeletePort" binding="tns:DeleteHTTPBinding">
+			<http:address location="http://localhost:8080/services/VendedorService/Delete" />
+		</wsdl:port>
+		<wsdl:port name="VendedorGetPort" binding="tns:GetHTTPBinding">
+			<http:address location="http://localhost:8088/services/VendedorService/Get" />
+		</wsdl:port>
+		<wsdl:port name="VendedorUpdatePort" binding="tns:UpdateSOAPBinding">
+			<soap:address location="http://localhost:8088/services/VendedorService/Update" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="DireccionService"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="DireccionCreateOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="id_cliente"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="barrio" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="ciudad" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="pais"
+							type="xsd:string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="DireccionCreateOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="DireccionUpdateOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+						<xsd:element name="id_cliente"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="barrio"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="ciudad"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="pais"
+							type="xsd:string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="DireccionUpdateOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+						<xsd:element name="id_cliente"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="barrio"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="ciudad"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="pais"
+							type="xsd:string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ClienteGetOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="in" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ClienteGetOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="DireccionDeleteOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="DireccionDeleteOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="DireccionGetOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="DireccionGetOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+						<xsd:element name="id_cliente"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="barrio"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="ciudad"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="pais"
+							type="xsd:string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="DireccionSearchOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="barrio" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="DireccionSearchOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+						<xsd:element name="id_cliente"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="barrio"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="ciudad"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="pais"
+							type="xsd:string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="DireccionCreateOperationRequest">
+		<wsdl:part name="parameters" element="tns:DireccionCreateOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="DireccionCreateOperationResponse">
+		<wsdl:part name="parameters" element="tns:DireccionCreateOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:message name="DireccionUpdateOperationRequest">
+		<wsdl:part name="parameters" element="tns:DireccionUpdateOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="DireccionUpdateOperationResponse">
+		<wsdl:part name="parameters" element="tns:DireccionUpdateOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ClienteGetOperationRequest">
+		<wsdl:part name="parameters" element="tns:ClienteGetOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ClienteGetOperationResponse">
+		<wsdl:part name="parameters" element="tns:ClienteGetOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="DireccionDeleteOperationRequest">
+		<wsdl:part name="parameters" element="tns:DireccionDeleteOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="DireccionDeleteOperationResponse">
+		<wsdl:part name="parameters" element="tns:DireccionDeleteOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="DireccionGetOperationRequest">
+		<wsdl:part name="parameters" element="tns:DireccionGetOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="DireccionGetOperationResponse">
+		<wsdl:part name="parameters" element="tns:DireccionGetOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="DireccionSearchOperationRequest">
+		<wsdl:part name="parameters" element="tns:DireccionSearchOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="DireccionSearchOperationResponse">
+		<wsdl:part name="parameters" element="tns:DireccionSearchOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="DireccionCreatePortType">
+		<wsdl:operation name="DireccionCreateOperation">
+			<wsdl:input message="tns:DireccionCreateOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:DireccionCreateOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:portType name="DireccionUpdatePortType">
+		<wsdl:operation name="DireccionUpdateOperation">
+			<wsdl:input message="tns:DireccionUpdateOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:DireccionUpdateOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>	<wsdl:portType name="DireccionHTTPPortType">		<wsdl:operation name="DireccionDeleteOperation">			<wsdl:input message="tns:DireccionDeleteOperationRequest"></wsdl:input>			<wsdl:output message="tns:DireccionDeleteOperationResponse"></wsdl:output>		</wsdl:operation>		<wsdl:operation name="DireccionGetOperation">			<wsdl:input message="tns:DireccionGetOperationRequest"></wsdl:input>			<wsdl:output message="tns:DireccionGetOperationResponse"></wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="DireccionSearchOperation">
+			<wsdl:input message="tns:DireccionSearchOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:DireccionSearchOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="DireccionServiceBinding"
+		type="tns:DireccionCreatePortType">
+
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="DireccionCreateOperation">
+
+			<soap:operation
+				soapAction="http://www.talend.org/service/DireccionCreateOperation" />
+			<wsdl:input>
+
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:binding name="UpdateSOAPBinding"
+		type="tns:DireccionUpdatePortType">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="DireccionUpdateOperation">
+			<soap:operation
+				soapAction="http://www.talend.org/service/DireccionUpdateOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="HTTPBinding" type="tns:DireccionHTTPPortType">
+		<http:binding verb="GET" />
+		<wsdl:operation name="DireccionDeleteOperation">
+			<http:operation location="/DireccionDeleteOperation" />
+			<wsdl:input>
+				<http:urlEncoded />
+			</wsdl:input>
+			<wsdl:output>
+				<mime:content type="text/xml" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="DireccionGetOperation">
+			<http:operation location="/DireccionGetOperation" />
+			<wsdl:input>
+				<http:urlEncoded />
+			</wsdl:input>
+			<wsdl:output>
+				<mime:content type="text/xml" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="DireccionSearchOperation">
+			<http:operation location="/DireccionSearchOperation" />
+			<wsdl:input>
+				<http:urlEncoded />
+			</wsdl:input>
+			<wsdl:output>
+				<mime:content type="text/xml" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="DireccionService">
+		<wsdl:port name="DireccionServiceCreatePort" binding="tns:DireccionServiceBinding">
+			<soap:address location="http://localhost:8090/services/DireccionService/Create" />
+		</wsdl:port>
+		<wsdl:port name="DireccionServiceUpdatePort" binding="tns:UpdateSOAPBinding">
+			<soap:address location="http://localhost:8090/services/DireccionService/Update" />
+		</wsdl:port>
+		<wsdl:port name="DireccionHTTPPort" binding="tns:HTTPBinding"><http:address location="http://localhost:8090/services/DireccionService/HTTP"/></wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

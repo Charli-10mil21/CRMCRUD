@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services">
+  <Services:ServiceConnection xmi:id="_GwW2kGtIEe29xYNNmrDJbw" id="_GwTzQGtIEe29xYNNmrDJbw" servicePort="_3muQwGzCEe2kU7wU0ZsY6Q _3muQwmzCEe2kU7wU0ZsY6Q _3muQxWzCEe2kU7wU0ZsY6Q _3muQx2zCEe2kU7wU0ZsY6Q"/>
+  <Services:ServicePort xmi:id="_3muQwGzCEe2kU7wU0ZsY6Q" name="ClienteCreatePortType" id="_TqOE8GtIEe29xYNNmrDJbw" serviceOperation="_3muQwWzCEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_3muQwWzCEe2kU7wU0ZsY6Q" label="ClienteCreateOperation-ClienteCreatePortType_ClienteCreateOperation" name="ClienteCreateOperation" id="_TqOsAGtIEe29xYNNmrDJbw" referenceJobId="_a6pJIGtJEe29xYNNmrDJbw"/>
+  <Services:ServicePort xmi:id="_3muQwmzCEe2kU7wU0ZsY6Q" name="ClienteGetPortType" id="_a-24cGzCEe2kU7wU0ZsY6Q" serviceOperation="_3muQw2zCEe2kU7wU0ZsY6Q _3muQxGzCEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_3muQw2zCEe2kU7wU0ZsY6Q" label="ClienteGetOperation-ClienteGetPortType_ClienteGetOperation" name="ClienteGetOperation" id="_a-24cWzCEe2kU7wU0ZsY6Q" referenceJobId="_x3HNIGzDEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_3muQxGzCEe2kU7wU0ZsY6Q" label="ClienteSearchOperation" name="ClienteSearchOperation" id="_a-24cmzCEe2kU7wU0ZsY6Q"/>
+  <Services:ServicePort xmi:id="_3muQxWzCEe2kU7wU0ZsY6Q" name="ClienteUpdatePortType" id="_hdluMGtIEe29xYNNmrDJbw" serviceOperation="_3muQxmzCEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_3muQxmzCEe2kU7wU0ZsY6Q" label="ClienteUpdateOperation" name="ClienteUpdateOperation" id="_hdluMWtIEe29xYNNmrDJbw"/>
+  <Services:ServicePort xmi:id="_3muQx2zCEe2kU7wU0ZsY6Q" name="ClienteDeletePortType" id="_3RN60GzCEe2kU7wU0ZsY6Q" serviceOperation="_3muQyGzCEe2kU7wU0ZsY6Q"/>
+  <Services:ServiceOperation xmi:id="_3muQyGzCEe2kU7wU0ZsY6Q" label="ClienteDeleteOperation-ClienteDeletePortType_ClienteDeleteOperation" name="ClienteDeleteOperation" id="_3RN60WzCEe2kU7wU0ZsY6Q" referenceJobId="__COZAGzCEe2kU7wU0ZsY6Q"/>
+</xmi:XMI>
