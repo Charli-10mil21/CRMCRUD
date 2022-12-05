@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="ProcedAlmacenadoService"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element
+				name="ProcedAlmacenadoServiceOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence maxOccurs="1" minOccurs="1">
+						<xsd:element name="Clientes" type="tns:ClienteType" maxOccurs="1" minOccurs="0"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ProcedAlmacenadoServiceOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		
+		
+			<xsd:complexType name="ClienteType">
+				<xsd:sequence>
+					<xsd:element name="CustomerID" type="xsd:string"></xsd:element>
+					<xsd:element name="CompanyName" type="xsd:string"></xsd:element>
+					<xsd:element name="ContactName" type="xsd:string"></xsd:element>
+					<xsd:element name="ContactTitle"
+						type="xsd:string">
+					</xsd:element>
+					<xsd:element name="Address" type="xsd:string"></xsd:element>
+					<xsd:element name="City" type="xsd:string"></xsd:element>
+					<xsd:element name="Region" type="xsd:string"></xsd:element>
+					<xsd:element name="PostalCode" type="xsd:string"></xsd:element>
+					<xsd:element name="Country" type="xsd:string"></xsd:element>
+					<xsd:element name="Phone" type="xsd:string"></xsd:element>
+					<xsd:element name="Fax" type="xsd:string"></xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:element name="ProcedAlmacenadoClienteServiceOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="Cliente" type="tns:ClienteType2"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ProcedAlmacenadoClienteServiceOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		
+			<xsd:complexType name="ClienteType2">
+				<xsd:sequence>
+					<xsd:element name="id_cliente" type="xsd:string"></xsd:element>
+					<xsd:element name="razon_social"
+						type="xsd:string">
+					</xsd:element>
+					<xsd:element name="nombre" type="xsd:string"></xsd:element>
+					<xsd:element name="id_vendedor" type="xsd:int"></xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="ProcedAlmacenadoServiceOperationRequest">
+		<wsdl:part name="parameters" element="tns:ProcedAlmacenadoServiceOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ProcedAlmacenadoServiceOperationResponse">
+		<wsdl:part name="parameters" element="tns:ProcedAlmacenadoServiceOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:message name="ProcedAlmacenadoClienteServiceOperationRequest">
+		<wsdl:part name="parameters" element="tns:ProcedAlmacenadoClienteServiceOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ProcedAlmacenadoClienteServiceOperationResponse">
+		<wsdl:part name="parameters" element="tns:ProcedAlmacenadoClienteServiceOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="ProcedAlmacenadoServicePortType">
+		<wsdl:operation name="ProcedAlmacenadoServiceOperation">
+			<wsdl:input message="tns:ProcedAlmacenadoServiceOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:ProcedAlmacenadoServiceOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:portType name="ProcedAlmacenadoClienteServicePortType">
+		<wsdl:operation name="ProcedAlmacenadoClienteServiceOperation">
+			<wsdl:input message="tns:ProcedAlmacenadoClienteServiceOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:ProcedAlmacenadoClienteServiceOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="ProcedAlmacenadoServiceBinding" type="tns:ProcedAlmacenadoServicePortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="ProcedAlmacenadoServiceOperation">
+			<soap:operation soapAction="http://www.talend.org/service/ProcedAlmacenadoServiceOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:binding name="SOAPClienteBinding"
+		type="tns:ProcedAlmacenadoClienteServicePortType">
+
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation
+			name="ProcedAlmacenadoClienteServiceOperation">
+
+			<soap:operation
+				soapAction="http://www.talend.org/service/ProcedAlmacenadoClienteServiceOperation" />
+			<wsdl:input>
+
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="ProcedAlmacenadoService">
+		<wsdl:port name="ProcedAlmacenadoServicePort" binding="tns:ProcedAlmacenadoServiceBinding">
+			<soap:address location="http://localhost:8090/services/ProcedAlmacenadoService" />
+		</wsdl:port>
+		<wsdl:port name="ProcedAlmacenaClientePort" binding="tns:SOAPClienteBinding">
+			<soap:address location="http://localhost:8090/services/ProcedAlmacenadoService/Cliente" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

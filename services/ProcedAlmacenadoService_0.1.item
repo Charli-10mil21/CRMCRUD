@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services">
+  <Services:ServiceConnection xmi:id="_7MJLUHAPEe2Y8efauNg-xQ" id="_7L4FkHAPEe2Y8efauNg-xQ" servicePort="_ERJfoHAeEe2Y8efauNg-xQ _ERJfonAeEe2Y8efauNg-xQ"/>
+  <Services:ServicePort xmi:id="_ERJfoHAeEe2Y8efauNg-xQ" name="ProcedAlmacenadoClienteServicePortType" id="_Dr8vkHAYEe2Y8efauNg-xQ" serviceOperation="_ERJfoXAeEe2Y8efauNg-xQ"/>
+  <Services:ServiceOperation xmi:id="_ERJfoXAeEe2Y8efauNg-xQ" label="ProcedAlmacenadoClienteServiceOperation-ProcedAlmacenadoClienteServicePortType_ProcedAlmacenadoClienteServiceOperation" name="ProcedAlmacenadoClienteServiceOperation" id="_D9dHkHAeEe2Y8efauNg-xQ" referenceJobId="_H8PRUHAeEe2Y8efauNg-xQ"/>
+  <Services:ServicePort xmi:id="_ERJfonAeEe2Y8efauNg-xQ" name="ProcedAlmacenadoServicePortType" id="_7Sfq8HAPEe2Y8efauNg-xQ" serviceOperation="_ERJfo3AeEe2Y8efauNg-xQ"/>
+  <Services:ServiceOperation xmi:id="_ERJfo3AeEe2Y8efauNg-xQ" label="ProcedAlmacenadoServiceOperation-ProcedAlmacenadoServicePortType_ProcedAlmacenadoServiceOperation" name="ProcedAlmacenadoServiceOperation" id="_7SgSAHAPEe2Y8efauNg-xQ" referenceJobId="_gjLoUHASEe2Y8efauNg-xQ"/>
+</xmi:XMI>
