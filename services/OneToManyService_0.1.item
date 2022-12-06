@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services">
+  <Services:ServiceConnection xmi:id="_SSBRsHGEEe2sJInf0ZCEmQ" id="_SSADkHGEEe2sJInf0ZCEmQ" servicePort="_zCz00HWCEe2eH-vK-zQOnQ _zCz00nWCEe2eH-vK-zQOnQ"/>
+  <Services:ServicePort xmi:id="_zCz00HWCEe2eH-vK-zQOnQ" name="OneToManyServicePortType" id="_SUldgHGEEe2sJInf0ZCEmQ" serviceOperation="_zCz00XWCEe2eH-vK-zQOnQ"/>
+  <Services:ServiceOperation xmi:id="_zCz00XWCEe2eH-vK-zQOnQ" label="OneToManyServiceOperation-OneToManyServicePortType_OneToManyServiceOperation" name="OneToManyServiceOperation" id="_SUldgXGEEe2sJInf0ZCEmQ" referenceJobId="_c4Xs4HGmEe2sJInf0ZCEmQ"/>
+  <Services:ServicePort xmi:id="_zCz00nWCEe2eH-vK-zQOnQ" name="OneToManyServiceRestPortType" id="_ytGqkHWCEe2eH-vK-zQOnQ" serviceOperation="_zCz003WCEe2eH-vK-zQOnQ"/>
+  <Services:ServiceOperation xmi:id="_zCz003WCEe2eH-vK-zQOnQ" label="OneToManyServiceRestOperation-OneToManyServiceRestPortType_OneToManyServiceRestOperation" name="OneToManyServiceRestOperation" id="_ytGqkXWCEe2eH-vK-zQOnQ" referenceJobId="_Ko1q8HWDEe2eH-vK-zQOnQ"/>
+</xmi:XMI>

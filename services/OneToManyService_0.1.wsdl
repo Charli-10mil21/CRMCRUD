@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="OneToManyService"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="OneToManyServiceOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="pedido" type="tns:Pedido"
+							minOccurs="1" maxOccurs="1">
+						</xsd:element>
+						<xsd:sequence>
+							<xsd:element name="item_pedido"
+								type="tns:Item" maxOccurs="unbounded" minOccurs="1">
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="OneToManyServiceOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="id_pedido" type="xsd:int"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		
+			<xsd:complexType name="Pedido">
+				<xsd:sequence>
+					<xsd:element name="fecha_emision"
+						type="xsd:dateTime">
+					</xsd:element>
+					<xsd:element name="fecha_entrega"
+						type="xsd:int">
+					</xsd:element>
+					<xsd:element name="id_cliente" type="xsd:string"></xsd:element>
+					<xsd:element name="id_vendedor" type="xsd:int"></xsd:element>
+					<xsd:element name="id_direccion" type="xsd:int"></xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+
+			<xsd:complexType name="Item">
+				<xsd:sequence>
+					<xsd:element name="cantidad" type="xsd:float"></xsd:element>
+					<xsd:element name="valor_unitario" type="xsd:double"></xsd:element>
+					<xsd:element name="id_material" type="xsd:int"></xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:element name="OneToManyServiceRestOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="pedido" type="tns:PedidoRest"
+							maxOccurs="1" minOccurs="1">
+						</xsd:element>
+						<xsd:element name="item_pedido"
+							type="tns:ItemRest" maxOccurs="unbounded" minOccurs="1">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="OneToManyServiceRestOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id_pedido" type="xsd:int"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		
+			<xsd:complexType name="PedidoRest">
+				<xsd:sequence>
+					<xsd:element name="fecha_emision"
+						type="xsd:dateTime">
+					</xsd:element>
+					<xsd:element name="id_cliente" type="xsd:string"></xsd:element>
+					<xsd:element name="id_vendedor" type="xsd:int"></xsd:element>
+					<xsd:element name="id_direccion"
+						type="xsd:int">
+					</xsd:element>
+					<xsd:element name="fecha_entrega" type="xsd:int"></xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			
+            <xsd:complexType name="ItemRest">
+            	<xsd:sequence>
+            		<xsd:element name="cantidad" type="xsd:float"></xsd:element>
+            		<xsd:element name="valor_unitario"
+            			type="xsd:double">
+            		</xsd:element>
+            		<xsd:element name="id_material" type="xsd:int"></xsd:element>
+            	</xsd:sequence>
+            </xsd:complexType>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="OneToManyServiceOperationRequest">
+		<wsdl:part name="parameters" element="tns:OneToManyServiceOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="OneToManyServiceOperationResponse">
+		<wsdl:part name="parameters" element="tns:OneToManyServiceOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:message name="OneToManyServiceRestOperationRequest">
+		<wsdl:part name="parameters" element="tns:OneToManyServiceRestOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="OneToManyServiceRestOperationResponse">
+		<wsdl:part name="parameters" element="tns:OneToManyServiceRestOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="OneToManyServicePortType">
+		<wsdl:operation name="OneToManyServiceOperation">
+			<wsdl:input message="tns:OneToManyServiceOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:OneToManyServiceOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:portType name="OneToManyServiceRestPortType">
+		<wsdl:operation name="OneToManyServiceRestOperation">
+			<wsdl:input message="tns:OneToManyServiceRestOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:OneToManyServiceRestOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="OneToManyServiceBinding"
+		type="tns:OneToManyServicePortType">
+
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="OneToManyServiceOperation">
+
+			<soap:operation
+				soapAction="http://www.talend.org/service/OneToManyServiceOperation" />
+			<wsdl:input>
+
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:binding name="HTTPBinding"
+		type="tns:OneToManyServiceRestPortType">
+		<http:binding verb="POST" />
+		<wsdl:operation name="OneToManyServiceRestOperation">
+			<http:operation location="/OneToManyServiceRestOperation" />
+			<wsdl:input>
+				<mime:content type="application/x-www-form-urlencoded" />
+			</wsdl:input>
+			<wsdl:output>
+				<mime:content type="text/xml" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="OneToManyService">
+		<wsdl:port name="OneToManyServicePort" binding="tns:OneToManyServiceBinding">
+			<soap:address location="http://localhost:8090/services/OneToManyService" />
+		</wsdl:port>
+		<wsdl:port name="OneToManyServiceRestPort" binding="tns:HTTPBinding">
+			<http:address location="http://localhost:8090/services/OneToManyServiceRest" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
